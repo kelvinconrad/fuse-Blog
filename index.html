@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Fuse Blog</title>
+     <!-- Google fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&amp;display=swap"/>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.13.0/css/pro.min.css"/>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="./assets/images/favicon.png"/>
+    <!--build:css assets/css/styles.min.css-->
+    <link rel="stylesheet" href="assets/css/elegant.css"/>
+    <link rel="stylesheet" href="assets/css/custom_bootstrap.css"/>
+    <link rel="stylesheet" href="assets/css/slick.css"/>
+    <link rel="stylesheet" href="assets/css/plyr.min.css"/>
+    <!-- cutom css -->
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <!--endbuild-->
+</head>
+<body>
+  <!-- pre loader -->
+   <div id="load">
+    <div class="load__content">
+      <div class="load__icon"><img src="assets/images/icons/load.gif" alt="Loading icon"/></div>
+    </div>
+  </div>
+  <!--Nav bar -->
+  <header class="theme-default">
+      <div id="search-box">
+        <div class="container">
+          <form action="/" method="POST">
+            <input type="text" placeholder="Searching for news" name="search"/>
+            <button><i class="fas fa-arrow-right"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="container">
+        <div class="header-wrapper">
+          <a class="header__logo" href="index.html"><img src="./assets/images/logo1.png" alt="Logo"/></a>
+          <nav>
+            <ul>
+              <li class="nav-item active"><a href="index.html">Home</a></li>
+              <li class="nav-item"><a>Blog</a>
+                <!-- Blog category drop down -->
+                <ul class="dropdown-menu">
+                  <li><a href="#">BLOG CATEGORY 1</a></li>
+                  <li><a href="#">BLOG CATEGORY 2</a></li>
+                  <li><a href="#">BLOG CATEGORY 3</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a href="#">Freebies</a>
+                <ul class="dropdown-menu">
+                  <li><a href="author.html">Photoshop</a></li>
+                  <li><a href="about.html">Wp Themes</a></li>
+                  <li><a href="contact.html">Code Snippets</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a href="about.html">About</a></li>
+              <li class="nav-item"><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          <!-- Social Icons -->
+          <div class="header__icon-group"><a href="#" id="search"><i class="fas fa-search"></i></a>
+            <div class="social">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-dribbble"></i></a>
+              <a id="mobile-menu-controller" href="#"><i class="fas fa-bars"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Main Section starts here -->
+    <div id="content">
+    <div class="container">
+      <div class="blog-with-sidebar">
+        <div class="row">
+    <!-- Right side bar starts here which contains the Category & Trending Post -->
+          <div class="col-12 col-md-5 col-lg-4 order-md-2">
+            <div class="blog-sidebar">
+              <div class="blog-sidebar-section -category">
+                <div class="center-line-title">
+                  <!-- Blog category sidebar -->
+                  <h5>Categories</h5>
+                </div>
+                  <a class="category -bar " href="blog_category_grid.html">
+                                    <!--Category 1::Background Image size is 340 x 80   -->
+                                <div class="category__background" style="background-image: url(assets/images/backgrounds/category-a.png)"></div>
+                                <h5 class="title">Web Development</h5>
+                                <h5 class="quantity">12</h5></a><a class="category -bar " href="blog_category_grid.html">
+                                    <!-- Category 2::Background Image size is 340 x 80 -->
+                                <div class="category__background" style="background-image: url(assets/images/backgrounds/category-b.png)"></div>
+                                <h5 class="title">Ui/Ux</h5>
+                                <h5 class="quantity">6</h5></a><a class="category -bar " href="blog_category_grid.html">
+                                    <!-- Category 3::Background Image size is 340 x 80 -->
+                                <div class="category__background" style="background-image: url(assets/images/backgrounds/category-c.png)"></div>
+                                <h5 class="title">Opensource</h5>
+                                <h5 class="quantity">15</h5></a><a class="category -bar " href="blog_category_grid.html">
+                                    <!-- Category 4::Background Image size is 340 x 80 -->
+                                <div class="category__background" style="background-image: url(assets/images/backgrounds/category-d.png)"></div>
+                                <h5 class="title">Productivity</h5>
+                                <h5 class="quantity">8</h5></a>
+              </div>
+                    <!-- Trending Post Side Bar Section-->
+              <div class="blog-sidebar-section -trending-post">
+                <div class="center-line-title">
+                  <h5>Trending post</h5>
+                </div>
+                               <!--Trending Post 1 -->
+                              <div class="trending-post">
+                                <div class="trending-post_image">
+                                  <div class="rank">1</div>
+                                        <!--Img size is 100 x 100 -->
+                                    <img src="assets/images/backgrounds/trending-post-a.png" alt="Web Accesibility For Beginers.."/>
+                                </div>
+                                <div class="trending-post_content">
+                                  <!-- Category Header -->
+                                  <h5>Web Development</h5>
+                                      <a href="post.html">Web Accesibility For Beginers..</a>
+                                  <div class="info__time"><i class="far fa-clock"></i>
+                                    <p>Nov 02, 2020</p>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <!-- Trending Post 2 -->
+                              <div class="trending-post">
+                                <div class="trending-post_image">
+                                  <div class="rank">2</div>
+                                      <!--Img size is 100 x 100 -->
+                                    <img src="assets/images/backgrounds/trending-post-b.png" alt="Free Ui Design Resources"/>
+                                </div>
+                                <div class="trending-post_content">
+                                  <!-- Category Header -->
+                                  <h5>Ui/UxDesign</h5>
+                                    <a href="post.html">Free Ui Design Resources</a>
+                                  <div class="info__time"><i class="far fa-clock"></i>
+                                    <p>Nov 02, 2020</p>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <!-- Trending Post 3 -->
+                              <div class="trending-post">
+                                <div class="trending-post_image">
+                                  <div class="rank">3</div>
+                                    <!--Img size is 100 x 100 -->
+                                    <img src="assets/images/backgrounds/trending-post-c.png" alt="Here's How Your Diet Can Help Yo Excel in Exams"/>
+                                </div>
+                                <div class="trending-post_content">
+                                    <!-- Category Header -->
+                                  <h5>Web Development</h5>
+                                      <a href="post.html">Should you Learn PHP iN 2020</a>
+                                  <div class="info__time"><i class="far fa-clock"></i>
+                                    <p>Nov 02, 2020</p>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <!-- Trending Post 4 -->
+                              <div class="trending-post">
+                                <div class="trending-post_image">
+                                  <div class="rank">4</div>
+                                    <!--Img size is 100 x 100 -->
+                                    <img src="assets/images/backgrounds/trending-post-d.png" alt="why others accept while AudioJungle..."/>
+                                </div>
+                                <div class="trending-post_content">
+                                    <!-- Category Header -->
+                                  <h5>Open-source</h5>
+                                    <a href="post.html">Fuse Free Open source Blog...</a>
+                                  <div class="info__time"><i class="far fa-clock"></i>
+                                    <p>Nov 02, 2020</p>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <!-- Trending Post 5 -->
+                              <div class="trending-post">
+                                <div class="trending-post_image">
+                                  <div class="rank">5</div>
+                                    <!--Img size is 100 x 100 -->
+                                    <img src="assets/images/backgrounds/trending-post-e.jpg" alt="Is node Js Dead??...Long live Deno"/>
+                                </div>
+                                <div class="trending-post_content">
+                                  <!-- Category Header -->
+                                  <h5>Web Development</h5>
+                                      <a href="post.html">Is node Js Dead??...Long live Deno</a>
+                                  <div class="info__time"><i class="far fa-clock"></i>
+                                    <p>Nov 02, 2020</p>
+                                  </div>
+                                </div>
+                              </div>
+              </div>
+              <!-- Subscribe Form -->
+              <form class="subcribe-box subcribe-box" action="/" method="POST">
+                <h5>Subcribe</h5>
+                <p>Lorem ipsum dolor amet, consectetur adipiscing elit, sed tempor.</p>
+                <input placeholder="Your email" name="email" type="email"/>
+                <a class="btn -normal" href="#">Subcribe</a>
+              </form>
+            </div>
+          </div>
+  <!--- End of Right Side Bar ----->
+
+          <div class="col-12 col-md-7 col-lg-8 order-md-1">
+            <div class="row">
+              <div class="col-sm-6 col-md-12">
+                    <div class="post-card -full -center">
+                      <a class="card__cover" href="post.html">
+                        <img src="assets/images/posts/img1.png" alt="Getting started with DevOps automation"/>
+                      </a>
+                      <div class="card__content">
+                        <!-- Content Category -->
+                        <h5 class="card__content-category">Opensource</h5>
+                        <!-- Content Heading -->
+                          <a class="card__content-title" href="post.html">Getting started with DevOps automation</a>
+                        <div class="card__content-info">
+                          <!-- Content Author -->
+                          <div class="info__time info__author"><i class="far fa-user"></i>
+                            <p>Kelvin</p>
+                          </div>
+                          <!-- Content Time and Date -->
+                          <div class="info__time"><i class="far fa-clock"></i>
+                            <p>Clock  Wed 02, 2020</p>
+                          </div>
+                          <!-- Comments -->
+                          <div class="info__comment"><i class="far fa-comment"></i>
+                            <p>3</p>
+                          </div>
+                        </div>
+                        <!-- post Description -->
+                        <p class="card__content-description">By now, most people in technology are familiar with the term DevOps. What we call “DevOps” will often differ between organizations, yet one thing remains the same: DevOps is defined by people building software and how they work together.</p>
+                        <a class="more-btn" href="post.html">Read more </a>
+                      </div>
+                    </div>
+              </div>
+          <div class="news-block__content -default">
+              <div class="news-block__content__slide">
+                  <div class="row">
+                    <div class="col-12">
+                        <div class="post-card -large">
+                          <a class="card__cover" href="post.html">
+                          <!-- img size 750 x 385 -->
+                          <img src="./assets/images/posts/ecommerce.jpg" alt="Ecommerce Development Trends"/></a>
+                            <div class="card__content">
+                              <!-- Post Content -->
+                               <h5 class="card__content-category">Web Dev</h5>
+                                 <a class="card__content-title" href="post.html">Ecommerce Development Trends</a>
+                                  <div class="card__content-info">
+                                    <div class="info__time">
+                                       <i class="far fa-clock"></i>
+                                      <p>Clock  Wed 02, 2020</p>
+                                    </div>
+                                      <div class="info__comment"><i class="far fa-comment"></i>
+                                        <p>3</p>
+                                      </div>
+                                  </div>
+                             </div>
+                          </div>
+                        </div>
+                          <div class="col-12">
+                            <div class="row">
+                              <div class="col-12 col-sm-6">
+                                    <div class="post-card -small">
+                                       <a class="card__cover" href="post.html">
+                                         <!-- img size 370 x 247 -->
+                                         <img src="./assets/images/posts/react.jpg" alt="Why You Should Be Using React"/></a>
+                                         <!-- Post content -->
+                                      <div class="card__content">
+                                        <h5 class="card__content-category">Web Dev</h5>
+                                         <a class="card__content-title" href="post.html">Why You Should Be Using React</a>
+                                        <div class="card__content-info">
+                                          <div class="info__time"><i class="far fa-clock"></i>
+                                            <p>Clock  Wed 02, 2020</p>
+                                          </div>
+                                          <div class="info__comment"><i class="far fa-comment"></i>
+                                            <p>3</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                              </div>
+                              <div class="col-12 col-sm-6">
+                                    <div class="post-card -small">
+                                      <a class="card__cover" href="post.html">
+                                           <!-- img size 370 x 247 -->
+                                        <img src="./assets/images/posts/webdesign.jpg" alt="Best design resources websites every developer should bookmark"/></a>
+                                        <!-- post content -->
+                                      <div class="card__content">
+                                        <h5 class="card__content-category">Ui/Ux</h5>
+                                         <a class="card__content-title" href="#">Best design resources websites every developer should bookmark</a>
+                                        <div class="card__content-info">
+                                          <div class="info__time"><i class="far fa-clock"></i>
+                                            <p>Clock  Wed 02, 2020</p>
+                                          </div>
+                                          <div class="info__comment"><i class="far fa-comment"></i>
+                                            <p>3</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                              </div>
+
+                              <div class="col-12 col-sm-6">
+                                    <div class="post-card -small">
+                                       <a class="card__cover" href="post.html">
+                                         <!-- img size 370 x 247 -->
+                                         <img src="./assets/images/posts/Opensource.jpg" alt="Best Open Source Tools For Developers"/></a>
+                                         <!-- Content -->
+                                      <div class="card__content">
+                                        <h5 class="card__content-category">Open-Source</h5>
+                                         <a class="card__content-title" href="post.html">Best Open Source Tools For Developers</a>
+                                        <div class="card__content-info">
+                                          <div class="info__time"><i class="far fa-clock"></i>
+                                            <p>Clock  Wed 02, 2020</p>
+                                          </div>
+                                          <div class="info__comment"><i class="far fa-comment"></i>
+                                            <p>3</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                              </div>
+                              <div class="col-12 col-sm-6">
+                                    <div class="post-card -small">
+                                      <a class="card__cover" href="post.html">
+                                        <!-- img size 370 x 247 -->
+                                        <img src="./assets/images/posts/productivity.png" alt="The 14 Best Productivity Tools for Developers"/></a>
+                                        <!-- Content -->
+                                      <div class="card__content">
+                                        <h5 class="card__content-category">Productivity</h5>
+                                         <a class="card__content-title" href="post.html">The 14 Best Productivity Tools for Developers</a>
+                                        <div class="card__content-info">
+                                          <div class="info__time"><i class="far fa-clock"></i>
+                                            <p>Clock  Wed 02, 2020</p>
+                                          </div>
+                                          <div class="info__comment"><i class="far fa-comment"></i>
+                                            <p>3</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<!-- Footer starts Here -->
+<footer>
+  <div class="container">
+    <div class="footer-content">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="footer-col -about">
+            <div class="center-line-title">
+              <h5>About us</h5>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida lacus vel facilisis. </p>
+            <div class="contact-method">
+              <p> <i class="fas fa-map-marker-alt"></i>Dar es Saalam,Tanzania</p>
+              <p> <i class="far fa-mobile-android"></i>+255 123456   |   +255 123456789</p>
+              <p> <i class="fas fa-headphones-alt"></i>hello@fuse.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="footer-col -feature-post">
+            <div class="center-line-title">
+              <h5>Feature posts</h5>
+            </div>
+            <div class="feature-post-block">
+                  <div class="post-card -tiny">
+                      <a class="card__cover" href="post.html">
+                        <!-- img size 360 x 360 -->
+                        <img src="assets/images/posts/Opensource.jpg" alt="Best Open Source Tools For Developers"/>
+                      </a>
+                    <div class="card__content">
+                      <h5 class="card__content-category">Open source</h5>
+                        <a class="card__content-title" href="post.html">Best Open Source Tools For Developers</a>
+                      <div class="card__content-info">
+                        <div class="info__time"><i class="far fa-clock"></i>
+                          <p>Clock  Wed 02, 2020</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="post-card -tiny">
+                    <a class="card__cover" href="post.html">
+                      <!-- img size 360 x 360 -->
+                      <img src="assets/images/posts/webdesign.jpg" alt="Best design resources websites every developer should bookmark"/>
+                    </a>
+                    <div class="card__content">
+                      <h5 class="card__content-category">Ui / Ux</h5>
+                        <a class="card__content-title" href="post.html">Best design resources websites every developer should bookmark</a>
+                      <div class="card__content-info">
+                        <div class="info__time"><i class="far fa-clock"></i>
+                          <p>Clock  Wed 02, 2020</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="post-card -tiny">
+                    <!-- img size 360 -->
+                     <a class="card__cover" href="post.html">
+                       <img src="assets/images/posts/react.jpg" alt="Why You Should Be Using React"/>
+                     </a>
+                     <!-- content -->
+                    <div class="card__content">
+                      <h5 class="card__content-category">Web Development</h5>
+                        <a class="card__content-title" href="post.html">Why You Should Be Using React</a>
+                      <div class="card__content-info">
+                        <div class="info__time"><i class="far fa-clock"></i>
+                          <p>Clock  Wed 02, 2020</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-12 col-lg-4">
+          <div class="footer-col -util">
+            <div class="row">
+                <!-- Blog Tags -->
+              <div class="col-12 col-md-6 col-lg-12">
+                <div class="center-line-title">
+                  <h5>Blog Tags</h5>
+                </div>
+                <div class="tags-group"><a class="tag-btn" href="blog_category_grid.html">Fuse</a>
+                  <a class="tag-btn" href="blog_category_grid.html">Web Development</a>
+                  <a class="tag-btn" href="blog_category_grid.html">Ui / Ux</a>
+                  <a class="tag-btn" href="blog_category_grid.html">Open source</a>
+                  <a class="tag-btn" href="blog_category_grid.html">Productivity</a>
+                  <a class="tag-btn" href="blog_category_grid.html">Github</a>
+                </div>
+              </div>
+              <!-- Social Media -->
+              <div class="col-12 col-md-6 col-lg-12">
+                <div class="center-line-title">
+                  <h5>Follow us</h5>
+                </div>
+                <div class="social-block"><a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-dribbble"></i></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>© 2020, Fuse - All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+    <!--js files are in assets/js-->
+    <script rel="script/javascript" src="assets/js/jquery.min.js"></script>
+    <script rel="script/javascript" src="assets/js/slick.min.js"></script>
+     <script rel="script/javascript" src="assets/js/plyr.min.js"></script>
+    <script rel="script/javascript" src="assets/js/masonry.pkgd.min.js"></script>
+    <script rel="script/javascript" src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script rel="script/javascript" src="assets/js/vimeo.player.min.js"></script>
+    <script rel="script/javascript" src="assets/js/main.js"></script>
+    <!--end of js files-->
+</body>
+</html>

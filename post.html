@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Post </title>
+     <!-- Google fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&amp;display=swap"/>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.13.0/css/pro.min.css"/>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="./assets/images/favicon.png"/>
+    <!--build:css assets/css/styles.min.css-->
+    <link rel="stylesheet" href="assets/css/elegant.css"/>
+    <link rel="stylesheet" href="assets/css/custom_bootstrap.css"/>
+    <link rel="stylesheet" href="assets/css/slick.css"/>
+    <link rel="stylesheet" href="assets/css/plyr.min.css"/>
+    <!-- cutom css -->
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <!--endbuild-->
+</head>
+<body>
+  <!-- pre loader -->
+   <div id="load">
+    <div class="load__content">
+      <div class="load__icon"><img src="assets/images/icons/load.gif" alt="Loading icon"/></div>
+    </div>
+  </div>
+  <!--Nav bar -->
+  <header class="theme-default">
+      <div id="search-box">
+        <div class="container">
+          <form action="/" method="POST">
+            <input type="text" placeholder="Searching for news" name="search"/>
+            <button><i class="fas fa-arrow-right"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="container">
+        <div class="header-wrapper">
+          <a class="header__logo" href="index.html"><img src="./assets/images/logo1.png" alt="Logo"/></a>
+          <nav>
+            <ul>
+              <li class="nav-item active"><a href="index.html">Home</a></li>
+              <li class="nav-item"><a>Blog</a>
+                <!-- Blog category drop down -->
+                <ul class="dropdown-menu">
+                  <li><a href="#">BLOG CATEGORY 1</a></li>
+                  <li><a href="#">BLOG CATEGORY 2</a></li>
+                  <li><a href="#">BLOG CATEGORY 3</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a href="#">Freebies</a>
+                <ul class="dropdown-menu">
+                  <li><a href="author.html">Photoshop</a></li>
+                  <li><a href="about.html">Wp Themes</a></li>
+                  <li><a href="contact.html">Code Snippets</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a href="about.html">About</a></li>
+              <li class="nav-item"><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          <!-- Social Icons -->
+          <div class="header__icon-group"><a href="#" id="search"><i class="fas fa-search"></i></a>
+            <div class="social">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-dribbble"></i></a>
+              <a id="mobile-menu-controller" href="#"><i class="fas fa-bars"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- post starts here -->
+    <div id="content">
+    <div class="post">
+      <div class="container">
+        <div class="post-standard">
+          <div class="post-standard__banner">
+            <div class="post-standard__banner__image">
+              <img src="assets/images/post_detail/standard/img1.png" alt="Post banner image"/>
+            </div>
+            <div class="post-standard__banner__content">
+                  <div class="post-card -center">
+                    <div></div>
+                    <div class="card__content">
+                      <h5 class="card__content-category">Open source</h5>
+                      <a class="card__content-title" post.html">Getting started with DevOps automation</a>
+                      <div class="card__content-info">
+                        <div class="info__time"><i class="far fa-clock"></i>
+                          <p>Clock  Wed 02, 2020</p>
+                        </div>
+                        <div class="info__comment"><i class="far fa-comment"></i>
+                          <p>3</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-8 mx-auto">
+              <div class="post-standard__content">
+                <!-- Post share icons -->
+                <div id="post-share">
+                  <h5>Share:</h5>
+                  <div class="social-media">
+                      <a href="#" style="background-color: #075ec8">
+                        <i class="fab fa-facebook-f"></i>
+                      </a>
+                      <a href="#" style="background-color: #40c4ff">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                       <a href="#" style="background-image: linear-gradient(to top, #f2a937, #d92e73, #9937b7, #4a66d3), linear-gradient(to top, #af00e1, #ff9e35)">
+                         <i class="fab fa-instagram"></i>
+                       </a>
+                       <a href="#" style="background-color: #ff0000">
+                         <i class="fab fa-youtube"></i>
+                       </a>
+                   </div>
+                </div>
+                <!-- content Starts here -->
+                <p class="paragraph">DevOps has been defined in many ways: a set of practices that automate and integrate processes so
+                   teams can build, test, and release software faster and more reliably; a combination of culture and tools that enable
+                   organizations to ship software at a higher velocity; a culture, a movement, or a philosophy. None of these are wrong,
+                   and they are all important aspects of DevOps—but they don’t quite fully capture what’s at the heart of DevOps: the
+                   essential human element between Dev and Ops teams, when collaboration bridges the gap that allows teams to ship better software, faster.
+                </p>
+                <p class="paragraph">For organizations, DevOps provides value by increasing software quality and stability, and shortening
+                   lead times to production. For developers, DevOps focuses on both automation and culture—it’s about how the work is done.
+                   But most importantly, DevOps is about enabling people to collaborate across roles to deliver value to end users quickly,
+                   safely, and reliably. Altogether, it’s a combination of focus, means, and expected results.
+                </p>
+                    <div class="post-card-quote -border">
+                      <div class="qoute__icon">
+                        <i class="fas fa-quote-left"></i>
+                      </div>
+                      <p class="quote__content">Programming is not a zero-sum game. Teaching something to a fellow programmer doesn’t take it away from you.</p>
+                      <h5 class="quote__author">Red Adair</h5>
+                    </div>
+                <p class="paragraph">Sometimes we hear teams say, “We use [tool X] or automate [X process], so now we’re doing DevOps!”
+                  But as noted above, tooling and automation are part of how you implement DevOps (the means), not DevOps itself. It’s
+                  a collaborative human endeavor, and our tooling—and the automation it supports—is how we get this work done. There are
+                  many tools in this space; while it’s tempting to immediately adopt a specific set of DevOps tools or a prescribed toolchain
+                  to try to shortcut your DevOps journey, choosing the right tooling for your organization is key to your success.
+                </p>
+                <!-- img size 370 x 370 -->
+                  <img class="image left" src="assets/images/post_detail/Devops.png" alt="Post image"/>
+                <p class="paragraph">One of the most common myths we hear is that Agile and DevOps are the same. While it’s easy to confuse the
+                   two, processes like Agile are part of how to DevOps, not what DevOps is. Agile, Lean, Extreme Programming, and other “work
+                   fast, ship often” models are just a few of the many ways teams can make DevOps successful. Agile ships software faster, but
+                   it doesn’t ensure collaboration with other teams in the software lifecycle, and can overwhelm test, QA, and operations teams
+                   if they’re in a siloed organization..
+                </p>
+                <p class="paragraph">In practice, DevOps is different for every organization, as each brings its own unique constraints, strengths,
+                   talent, and goals; the tools and processes that worked in one company won’t necessarily translate into success for another.
+                   Although there are common practices and principles for successful DevOps transformations, it’s not pre-packaged in a box,
+                   and there are many ways that companies can successfully implement their own.
+                </p>
+                <p class="paragraph">While it’s true that DevOps delivers value for organizations, helping them develop and deliver innovation
+                  to their end users with speed, stability, and reliability, there’s so much more to it. DevOps started, in part, as a way to
+                  make software more humane. By automating our workflows, people can focus more on the task at hand. This brings more joy to
+                  our work and decreases burnout.
+                </p>
+                <p class="paragraph">There are a few key concepts and principles that every successful DevOps program shares.
+                  Combining these with the right tooling, process, and culture will help teams find DevOps success. While DevOps will look
+                  different for each organization and team
+                </p>
+                <!-- Post footer -->
+                <div class="post-footer">
+                  <div class="post-footer__tags center">
+                    <div class="tags-group">
+                      <a class="tag-btn" href="blog_category_grid.html">Ui / Ux</a>
+                      <a class="tag-btn" href="blog_category_grid.html">Web Development</a>
+                      <a class="tag-btn" href="blog_category_grid.html">Productivity</a>
+                      <a class="tag-btn" href="blog_category_grid.html">Open Source</a>
+                      <a class="tag-btn" href="blog_category_grid.html">Freebies</a>
+                    </div>
+                  </div>
+                  <div class="post-footer__author">
+                    <div class="author__avatar">
+                      <!-- img size 150 x 150 -->
+                      <img src="assets/images/post_detail/auth.png" alt="Author avatar"/>
+                    </div>
+                    <!-- Author Info -->
+                    <div class="author__info">
+                        <h5>Kelvin Conrad</h5>
+                        <p>An avid Ui/Ux designer & Web developer who is passionate about solving complex UX challenges across digital businesses.</p>
+                        <!-- social Media -->
+                        <div class="social-media">
+                            <a href="#">
+                              <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#">
+                              <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#">
+                              <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#">
+                              <i class="fab fa-dribbble"></i>
+                            </a>
+                        </div>
+                    </div>
+                  </div>
+                  <!-- Related Posts -->
+                  <div class="post-footer__related">
+                    <div class="post-footer__related__item -prev">
+                      <!-- <a href="post_standard.html"> <i class="fas fa-chevron-left"></i>Previous posts</a> -->
+                      <div class="post-footer__related__item__content">
+                        <!-- img size 360 x 360 -->
+                          <img src="assets/images/posts/webdesign.jpg" alt="Relate news image"/>
+                        <div class="post-card ">
+                            <div></div>
+                            <div class="card__content">
+                              <h5 class="card__content-category">Open Source</h5>
+                              <a class="card__content-title" href="#">Best design resources websites every developer should bookmark</a>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="post-footer__related__item -next">
+                      <!-- <a href="#">Next posts<i class="fas fa-chevron-right"></i></a> -->
+                      <div class="post-footer__related__item__content">
+                        <div class="post-card -right">
+                          <div></div>
+                          <div class="card__content">
+                            <h5 class="card__content-category">Open Source</h5>
+                              <a class="card__content-title" href="#">Best Open Source Tools For Developers</a>
+                          </div>
+                        </div>
+                         <img src="assets/images/posts/Opensource.jpg" alt="Relate news image"/>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- comments  -->
+                  <div class="post-footer__comment">
+                    <h3 class="comment-title"> <span>3 comment</span></h3>
+                    <div class="post-footer__comment__detail">
+
+                      <div class="comment__item">
+                        <div class="comment__item__avatar">
+                          <img src="assets/images/post_detail/avatar/1.png" alt="Author avatar"/>
+                        </div>
+                        <div class="comment__item__content">
+                          <div class="comment__item__content__header">
+                            <h5>David Yu</h5>
+                            <div class="data">
+                              <p><i class="far fa-clock"></i>Nov 02, 2020</p>
+                              <p><i class="far fa-heart"></i>12</p>
+                              <p><i class="far fa-share-square"></i>1</p>
+                            </div>
+                          </div>
+                          <p>Exactly. E.g. In IoT doing Machine Learning at the Edge (as in Edge Computing) oftentimes Kubernetes or containers in
+                             general aren't possible. Serverless is the only lightweight code that can actually run there.</p>
+                        </div>
+                      </div>
+
+                      <div class="comment__item">
+                        <div class="comment__item__avatar"><img src="assets/images/post_detail/avatar/3.png" alt="Author avatar"/></div>
+                        <div class="comment__item__content">
+                          <div class="comment__item__content__header">
+                            <h5>Rodgers </h5>
+                            <div class="data">
+                              <p><i class="far fa-clock"></i>Nov 02, 2020</p>
+                              <p><i class="far fa-heart"></i>12</p>
+                              <p><i class="far fa-share-square"></i>1</p>
+                            </div>
+                          </div>
+                          <p>Awesome article. Great job!!!
+                            It offers the elements to compounds the "Big Picture" which can guide our decisions.Thank you.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- comment Form -->
+                    <h3 class="comment-title"> <span>Leave a comment</span></h3>
+                    <div class="post-footer__comment__form">
+                      <form action="/">
+                        <div class="row">
+                          <div class="col-12 col-sm-4">
+                            <input type="text" placeholder="Name" name="name"/>
+                          </div>
+                          <div class="col-12 col-sm-4">
+                            <input type="email" placeholder="Email" name="email"/>
+                          </div>
+                          <div class="col-12 col-sm-4">
+                            <input type="text" placeholder="Webiste" name="website"/>
+                          </div>
+                        </div>
+                        <textarea cols="30" rows="5" placeholder="Messages" name="message"></textarea>
+                      </form>
+                      <div class="center">
+                        <button class="btn -normal">Submit</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Footer starts here -->
+<footer>
+  <div class="container">
+    <div class="footer-content">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="footer-col -about">
+            <div class="center-line-title">
+              <h5>About us</h5>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida lacus vel facilisis. </p>
+            <div class="contact-method">
+              <p> <i class="fas fa-map-marker-alt"></i>Dar es Saalam,Tanzania</p>
+              <p> <i class="far fa-mobile-android"></i>+255 123456   |   +255 123456789</p>
+              <p> <i class="fas fa-headphones-alt"></i>hello@fuse.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="footer-col -feature-post">
+            <div class="center-line-title">
+              <h5>Feature posts</h5>
+            </div>
+            <div class="feature-post-block">
+                  <div class="post-card -tiny">
+                      <a class="card__cover" href="post.html">
+                        <!-- img size 360 x 360 -->
+                        <img src="assets/images/posts/Opensource.jpg" alt="Best Open Source Tools For Developers"/>
+                      </a>
+                    <div class="card__content">
+                      <h5 class="card__content-category">Open source</h5>
+                        <a class="card__content-title" href="post.html">Best Open Source Tools For Developers</a>
+                      <div class="card__content-info">
+                        <div class="info__time"><i class="far fa-clock"></i>
+                          <p>Clock  Wed 02, 2020</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="post-card -tiny">
+                    <a class="card__cover" href="post.html">
+                      <!-- img size 360 x 360 -->
+                      <img src="assets/images/posts/webdesign.jpg" alt="Best design resources websites every developer should bookmark"/>
+                    </a>
+                    <div class="card__content">
+                      <h5 class="card__content-category">Ui / Ux</h5>
+                        <a class="card__content-title" href="post.html">Best design resources websites every developer should bookmark</a>
+                      <div class="card__content-info">
+                        <div class="info__time"><i class="far fa-clock"></i>
+                          <p>Clock  Wed 02, 2020</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="post-card -tiny">
+                    <!-- img size 360 -->
+                     <a class="card__cover" href="post.html">
+                       <img src="assets/images/posts/react.jpg" alt="Why You Should Be Using React"/>
+                     </a>
+                     <!-- content -->
+                    <div class="card__content">
+                      <h5 class="card__content-category">Web Development</h5>
+                        <a class="card__content-title" href="post.html">Why You Should Be Using React</a>
+                      <div class="card__content-info">
+                        <div class="info__time"><i class="far fa-clock"></i>
+                          <p>Clock  Wed 02, 2020</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-12 col-lg-4">
+          <div class="footer-col -util">
+            <div class="row">
+                <!-- Blog Tags -->
+              <div class="col-12 col-md-6 col-lg-12">
+                <div class="center-line-title">
+                  <h5>Blog Tags</h5>
+                </div>
+                <div class="tags-group"><a class="tag-btn" href="blog_category_grid.html">Fuse</a>
+                  <a class="tag-btn" href="blog_category_grid.html">Web Development</a>
+                  <a class="tag-btn" href="blog_category_grid.html">Ui / Ux</a>
+                  <a class="tag-btn" href="blog_category_grid.html">Open source</a>
+                  <a class="tag-btn" href="blog_category_grid.html">Productivity</a>
+                  <a class="tag-btn" href="blog_category_grid.html">Github</a>
+                </div>
+              </div>
+              <!-- Social Media -->
+              <div class="col-12 col-md-6 col-lg-12">
+                <div class="center-line-title">
+                  <h5>Follow us</h5>
+                </div>
+                <div class="social-block"><a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-dribbble"></i></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>© 2020, Fuse - All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+<!--js files are in assets/js-->
+     <script rel="script/javascript" src="assets/js/jquery.min.js"></script>
+     <script rel="script/javascript" src="assets/js/slick.min.js"></script>
+      <script rel="script/javascript" src="assets/js/plyr.min.js"></script>
+     <script rel="script/javascript" src="assets/js/masonry.pkgd.min.js"></script>
+     <script rel="script/javascript" src="assets/js/imagesloaded.pkgd.min.js"></script>
+     <script rel="script/javascript" src="assets/js/vimeo.player.min.js"></script>
+     <script rel="script/javascript" src="assets/js/main.js"></script>
+
+</body>
+</html>
