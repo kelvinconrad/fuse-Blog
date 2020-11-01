@@ -4,7 +4,7 @@
 
 Fuse Blog is an open source Minimalist Blog template 
 
-![](Landing.PNG)
+![](landing.PNG)
 
 
 ## Getting Started
