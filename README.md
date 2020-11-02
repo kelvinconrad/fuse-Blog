@@ -52,14 +52,56 @@ The template is a HTML which uses Bootstrap.Template structure
 #### Plyr.js for player
 ```
 <link rel="stylesheet" href="assets/css/plyr.min.css"/>
-Main style
-<link rel="stylesheet" href="assets/css/style.css"/>
 ```
 
 #### Main style file
 ```
 <link rel="stylesheet" href="assets/css/style.css"/>
 ```
+## Javascript Files
+
+#### Jquery
+```
+<script rel="script/javascript" src="assets/js/jquery.min.js"></script>
+```
+
+#### Slick slider
+```
+<script rel="script/javascript" src="assets/js/slick.min.js"></script>
+```
+
+#### Plyr.js
+```
+<script rel="script/javascript" src="assets/js/plyr.min.js"></script>
+```
+
+#### Mansonry
+```
+<script rel="script/javascript" src="assets/js/masonry.pkgd.min.js"></script>
+```
+
+#### Image loaded
+```
+<script rel="script/javascript" src="assets/js/imagesloaded.pkgd.min.js"></script>
+```
+
+#### Vimeo API
+```
+<script rel="script/javascript" src="assets/js/vimeo.player.min.js"></script>
+```
+
+#### Main javascript file
+```
+<script rel="script/javascript" src="assets/js/main.js"></script>
+```
+
+## Colors
+### How to change main color
+![](https://ibb.co/MZwBF1D)
+1. Go to path assets/sass/abstracts
+2. Open varible.scss file
+3. Find variable $colors and edit key yellow in it to color you want
+
 
 ## Bugs and Issues
 
