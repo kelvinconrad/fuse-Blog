@@ -18,8 +18,7 @@ Choose one of the following options to get started:
 
 The template is just a HTML which uses Bootstrap.Template structure
 ###css files
-`//Main font family
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"/>`
+
 
 
 ## Bugs and Issues
