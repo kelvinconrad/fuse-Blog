@@ -52,6 +52,8 @@ The template is a HTML which uses Bootstrap.Template structure
 #### Plyr.js for player
 ```
 <link rel="stylesheet" href="assets/css/plyr.min.css"/>
+Main style
+<link rel="stylesheet" href="assets/css/style.css"/>
 ```
 
 #### Main style file
