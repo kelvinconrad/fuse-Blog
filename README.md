@@ -16,10 +16,48 @@ Choose one of the following options to get started:
 
 ## Using the Template
 
-The template is just a HTML which uses Bootstrap.Template structure
-###css files
+The template is a HTML which uses Bootstrap.Template structure
+### css files
 
+#### Main font family
+```
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"/>
+```
 
+#### Fontawesome icon font
+```
+<link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.13.0/css/pro.min.css"/>
+```
+
+#### Fav icon
+```
+<link rel="shortcut icon" type="image/png" href="./assets/images/fav.png"/>
+```
+
+#### Elegant icon font
+```
+<link rel="stylesheet" href="assets/css/elegant.css"/>
+```
+
+#### Customed boostrap
+```
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css"/>
+```
+
+#### Slick slider
+```
+<link rel="stylesheet" href="assets/css/slick.css"/>
+```
+
+#### Plyr.js for player
+```
+<link rel="stylesheet" href="assets/css/plyr.min.css"/>
+```
+
+#### Main style file
+```
+<link rel="stylesheet" href="assets/css/style.css"/>
+```
 
 ## Bugs and Issues
 
