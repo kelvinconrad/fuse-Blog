@@ -103,6 +103,8 @@ The template is a HTML which uses Bootstrap.Template structure
 2. Open varible.scss file
 3. Find variable $colors and edit key yellow in it to color you want
 
+## Using Css Preprocessors
+If you have knowledge of css preprocessors, you can edit the source code file in sass folder to have a theme with a higher degree of customization than editing the CSS files. I used SCSS as css Preprocessors. 
 
 ## Bugs and Issues
 
