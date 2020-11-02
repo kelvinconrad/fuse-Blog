@@ -97,7 +97,8 @@ The template is a HTML which uses Bootstrap.Template structure
 
 ## Colors
 ### How to change main color
-![](https://ibb.co/MZwBF1D)
+![](https://i.ibb.co/346RgFy/colors.png)
+
 1. Go to path assets/sass/abstracts
 2. Open varible.scss file
 3. Find variable $colors and edit key yellow in it to color you want
