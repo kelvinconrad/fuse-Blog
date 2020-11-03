@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Post </title>
+     <!-- Google fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&amp;display=swap"/>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.13.0/css/pro.min.css"/>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="./assets/images/favicon.png"/>
+    <!--build:css assets/css/styles.min.css-->
+    <link rel="stylesheet" href="assets/css/elegant.css"/>
+    <link rel="stylesheet" href="assets/css/custom_bootstrap.css"/>
+    <link rel="stylesheet" href="assets/css/slick.css"/>
+    <link rel="stylesheet" href="assets/css/plyr.min.css"/>
+    <!-- cutom css -->
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <!--endbuild-->
+</head>
+<body>
+  <!-- pre loader -->
+   <div id="load">
+    <div class="load__content">
+      <div class="load__icon"><img src="assets/images/icons/load.gif" alt="Loading icon"/></div>
+    </div>
+  </div>
+  <!--Nav bar -->
+  <header class="theme-default">
+      <div id="search-box">
+        <div class="container">
+          <form action="/" method="POST">
+            <input type="text" placeholder="Searching for news" name="search"/>
+            <button><i class="fas fa-arrow-right"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="container">
+        <div class="header-wrapper">
+          <a class="header__logo" href="index.html"><img src="./assets/images/logo1.png" alt="Logo"/></a>
+          <nav>
+            <ul>
+              <li class="nav-item"><a href="index.html">Home</a></li>
+              <li class="nav-item"><a>Blog</a>
+                <!-- Blog Nav category drop down uncomment if you want a drop down-->
+                <!-- <ul class="dropdown-menu">
+                  <li><a href="#">BLOG CATEGORY 1</a></li>
+                  <li><a href="#">BLOG CATEGORY 2</a></li>
+                  <li><a href="#">BLOG CATEGORY 3</a></li>
+                </ul> -->
+              </li>
+              <li class="nav-item"><a href="#">Freebies</a></li>
+              <li class="nav-item"><a href="about.html">About</a></li>
+              <li class="nav-item active"><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          <!-- Social Icons -->
+          <div class="header__icon-group"><a href="#" id="search"><i class="fas fa-search"></i></a>
+            <div class="social">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-dribbble"></i></a>
+              <a id="mobile-menu-controller" href="#"><i class="fas fa-bars"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Main content starts here -->
+    <div class="no-pd" id="content">
+        <div class="container">
+              <div class="breadcrumb">
+                <ul>
+                  <li><a href="index.html"> <i class="fas fa-home"></i>Home</a></li>
+                  <li class="active"><a href="#">Contact us</a></li>
+                </ul>
+              </div>
+          <div class="contact-us">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div class="contact-us__info">
+                  <h3 class="contact-title">GET IN TOUCH</h3>
+                  <p class="contact-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                  <div class="contact-method">
+                    <div class="contact-method__item"><i class="fas fa-map-marker-alt"></i>
+                      <p>Dar es saalam, Tanzania</p>
+                    </div>
+                    <div class="contact-method__item"><i class="fas fa-mobile-alt"></i>
+                      <p>+255 123456789   |   +255 123546977</p>
+                    </div>
+                    <div class="contact-method__item"><i class="fas fa-headphones-alt"></i>
+                      <p>hello@fuse.com</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="contact-us__social">
+                  <h3 class="contact-title">GET IN TOUCH</h3>
+                  <div class="social-block"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-dribbble"></i></a></div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="contact-us__form">
+                  <h3 class="contact-title">LEAVE A MESSAGE</h3>
+                  <form action="/">
+                    <input type="text" placeholder="Name" name="name"/>
+                    <input type="email" placeholder="Email" name="email"/>
+                    <input type="text" placeholder="Website" name="website"/>
+                    <textarea name="message" cols="30" rows="8" placeholder="Message"></textarea>
+                    <button class="btn -normal">Send message</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="subcribe-bar">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div class="subcribe-bar__content">
+                  <h5>Don’t miss our future updates!</h5>
+                  <h3>Get Subscribe today!</h3>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <form class="subcribe-bar__form" action="/">
+                  <input type="text" placeholder="You email"/>
+                  <button class="btn -normal">Subcribe  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer starts Here -->
+<footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="footer-col -about">
+              <div class="center-line-title">
+                <h5>About us</h5>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida lacus vel facilisis. </p>
+              <div class="contact-method">
+                <p> <i class="fas fa-map-marker-alt"></i>Dar es Saalam,Tanzania</p>
+                <p> <i class="far fa-mobile-android"></i>+255 123456   |   +255 123456789</p>
+                <p> <i class="fas fa-headphones-alt"></i>hello@fuse.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="footer-col -feature-post">
+              <div class="center-line-title">
+                <h5>Feature posts</h5>
+              </div>
+              <div class="feature-post-block">
+                    <div class="post-card -tiny">
+                        <a class="card__cover" href="post.html">
+                          <!-- img size 360 x 360 -->
+                          <img src="assets/images/posts/Opensource.jpg" alt="Best Open Source Tools For Developers"/>
+                        </a>
+                      <div class="card__content">
+                        <h5 class="card__content-category">Open source</h5>
+                          <a class="card__content-title" href="post.html">Best Open Source Tools For Developers</a>
+                        <div class="card__content-info">
+                          <div class="info__time"><i class="far fa-clock"></i>
+                            <p>Clock  Wed 02, 2020</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="post-card -tiny">
+                      <a class="card__cover" href="post.html">
+                        <!-- img size 360 x 360 -->
+                        <img src="assets/images/posts/webdesign.jpg" alt="Best design resources websites every developer should bookmark"/>
+                      </a>
+                      <div class="card__content">
+                        <h5 class="card__content-category">Ui / Ux</h5>
+                          <a class="card__content-title" href="post.html">Best design resources websites every developer should bookmark</a>
+                        <div class="card__content-info">
+                          <div class="info__time"><i class="far fa-clock"></i>
+                            <p>Clock  Wed 02, 2020</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="post-card -tiny">
+                      <!-- img size 360 -->
+                       <a class="card__cover" href="post.html">
+                         <img src="assets/images/posts/react.jpg" alt="Why You Should Be Using React"/>
+                       </a>
+                       <!-- content -->
+                      <div class="card__content">
+                        <h5 class="card__content-category">Web Development</h5>
+                          <a class="card__content-title" href="post.html">Why You Should Be Using React</a>
+                        <div class="card__content-info">
+                          <div class="info__time"><i class="far fa-clock"></i>
+                            <p>Clock  Wed 02, 2020</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-12 col-lg-4">
+            <div class="footer-col -util">
+              <div class="row">
+                  <!-- Blog Tags -->
+                <div class="col-12 col-md-6 col-lg-12">
+                  <div class="center-line-title">
+                    <h5>Blog Tags</h5>
+                  </div>
+                  <div class="tags-group"><a class="tag-btn" href="blog_category_grid.html">Fuse</a>
+                    <a class="tag-btn" href="blog_category_grid.html">Web Development</a>
+                    <a class="tag-btn" href="blog_category_grid.html">Ui / Ux</a>
+                    <a class="tag-btn" href="blog_category_grid.html">Open source</a>
+                    <a class="tag-btn" href="blog_category_grid.html">Productivity</a>
+                    <a class="tag-btn" href="blog_category_grid.html">Github</a>
+                  </div>
+                </div>
+                <!-- Social Media -->
+                <div class="col-12 col-md-6 col-lg-12">
+                  <div class="center-line-title">
+                    <h5>Follow us</h5>
+                  </div>
+                  <div class="social-block"><a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-dribbble"></i></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>© 2020, Fuse - All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  
+  
+      <!--js files are in assets/js-->
+      <script rel="script/javascript" src="assets/js/jquery.min.js"></script>
+      <script rel="script/javascript" src="assets/js/slick.min.js"></script>
+       <script rel="script/javascript" src="assets/js/plyr.min.js"></script>
+      <script rel="script/javascript" src="assets/js/masonry.pkgd.min.js"></script>
+      <script rel="script/javascript" src="assets/js/imagesloaded.pkgd.min.js"></script>
+      <script rel="script/javascript" src="assets/js/vimeo.player.min.js"></script>
+      <script rel="script/javascript" src="assets/js/main.js"></script>
+      <!--end of js files-->
+  </body>
+  </html>
+  
