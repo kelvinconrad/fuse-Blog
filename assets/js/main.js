@@ -9,52 +9,52 @@ const slideArrow = {
 };
 const DUMMY_DATA = [
   {
-    image: "assets/images/posts/1.png",
-    category: "Technology",
-    title: "Looking for some feedback for this rejected track",
-    date: "Clock  Wed 02, 2019",
+    image: "assets/images/posts/react.jpg",
+    category: "Web Development",
+    title: "Why You Should Be Using React",
+    date: "Clock  Wed 02, 2020",
     comment: 3,
   },
   {
-    image: "assets/images/posts/2.png",
-    category: "Typography",
-    title: "How to name, save and export a finish template",
-    date: "Clock  Wed 02, 2019",
+    image: "assets/images/posts/ecommerce.jpg",
+    category: "Web Development",
+    title: "Ecommerce Development Trends",
+    date: "Clock  Wed 02, 2020",
     comment: 3,
   },
   {
-    image: "assets/images/posts/3.png",
-    category: "Graphic",
-    title: "I want to create a logo with illustrator hacker",
-    date: "Clock  Wed 02, 2019",
+    image: "assets/images/posts/react.jpg",
+    category: "Web Development",
+    title: "Should you Learn React",
+    date: "Clock  Wed 02, 2020",
     comment: 3,
   },
   {
-    image: "assets/images/posts/4.png",
-    category: "Design",
-    title: "where I can found the sound in this video template?",
-    date: "Clock  Wed 02, 2019",
+    image: "assets/images/posts/ecommerce.jpg",
+    category: "Web Development",
+    title: "Ecommerce Development Trends",
+    date: "Clock  Wed 02, 2020",
     comment: 3,
   },
   {
-    image: "assets/images/posts/5.png",
-    category: "Graphic",
-    title: "I want to create a logo with illustrator hacker",
-    date: "Clock  Wed 02, 2019",
+    image: "assets/images/posts/react.jpg",
+    category: "Web Development",
+    title: "Why You Should Be Using React",
+    date: "Clock  Wed 02, 2020",
     comment: 3,
   },
   {
-    image: "assets/images/posts/6.png",
-    category: "Typography",
-    title: "where I can found the sound in this video template?",
-    date: "Clock  Wed 02, 2019",
+    image: "assets/images/posts/ecommerce.jpg",
+    category: "Web Development",
+    title: "Ecommerce Development Trends",
+    date: "Clock  Wed 02, 2020",
     comment: 3,
   },
   {
-    image: "assets/images/posts/7.png",
-    category: "Graphic",
-    title: "I want to create a logo with illustrator hacker",
-    date: "Clock  Wed 02, 2019",
+    image: "assets/images/posts/react.jpg",
+    category: "Web Development",
+    title: "Why You Should Be Using React",
+    date: "Clock  Wed 02, 2020",
     comment: 3,
   },
 ];
@@ -104,9 +104,9 @@ function categoryGenerator() {
     if (currentCategoryLayout === "grid") {
       DUMMY_DATA.forEach((item, index) => {
         content += `
-          <div class="post-card -center"><a class="card__cover" href="post_standard.html"><img src="${item.image}" alt="${item.title}"></a>
+          <div class="post-card -center"><a class="card__cover" href="post.html"><img src="${item.image}" alt="${item.title}"></a>
             <div class="card__content">
-            <h5 class="card__content-category">${item.category}</h5><a class="card__content-title" href="post_standard.html">${item.title}</a>
+            <h5 class="card__content-category">${item.category}</h5><a class="card__content-title" href="post.html">${item.title}</a>
             <div class="card__content-info">
               <div class="info__time"><i class="far fa-clock"></i>
                 <p>${item.date}</p>
@@ -137,12 +137,14 @@ function categoryGenerator() {
       DUMMY_DATA.forEach((item, index) => {
         content += `
         <div class="col-12">
-          <div class="post-card -small -horizontal"><a class="card__cover" href="post_standard.html" tabindex="0"><img src="${item.image}" alt="${item.title}"></a>
+          <div class="post-card -small -horizontal">
+            <a class="card__cover" href="post.html" tabindex="0"><img src="${item.image}" alt="${item.title}"></a>
             <div class="card__content">
-              <h5 class="card__content-category">Technology</h5><a class="card__content-title" href="post_standard.html" tabindex="0">${item.title}</a>
+              <h5 class="card__content-category">Web Development</h5>
+                <a class="card__content-title" href="post.html" tabindex="0">${item.title}</a>
               <div class="card__content-info">
                 <div class="info__time"><i class="far fa-clock"></i>
-                  <p>Clock  Wed 02, 2019</p>
+                  <p>Clock  Wed 02, 2020</p>
                 </div>
                 <div class="info__comment"><i class="far fa-comment"></i>
                   <p>3</p>
